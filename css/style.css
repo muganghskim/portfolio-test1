@@ -175,3 +175,71 @@ body {
 #container .about .about-left-context .aboutBtns li:nth-child(2) {
   width: 220px;
 }
+#container .service {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+#container .service .center {
+  width: 57.3%;
+  text-align: center;
+}
+#container .service .center h2 {
+  margin-top: 120px;
+  margin-bottom: 23px;
+  font-size: 25px;
+  color: #040c2c;
+}
+#container .service .center > p {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 100px;
+}
+#container .service .center > p::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80px;
+  height: 1px;
+  background-color: #888;
+}
+#container .service .center .service-boxs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+#container .service .center .service-boxs .service-box {
+  cursor: pointer;
+  width: 31%;
+  transition: all 1s;
+  margin-bottom: 35px;
+  border: 1px solid #f3f1f1;
+  background-color: #fff;
+}
+#container .service .center .service-boxs .service-box h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+#container .service .center .service-boxs .service-box p {
+  font-size: 15px;
+  line-height: 28px;
+  padding-bottom: 50px;
+}
+#container .service .center .service-boxs .service-box .service-icon {
+  margin: 35px auto 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+#container .service .center .service-boxs .service-box .service-icon i {
+  font-size: 28px;
+  color: #888;
+}
+#container .service .center .service-boxs .service-box:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
