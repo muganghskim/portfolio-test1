@@ -95,6 +95,11 @@ body {
   font-size: 20px;
   letter-spacing: 1px;
 }
+#container .home .bg .center h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
 #container .home .bg .center .snsIcon {
   display: flex;
   justify-content: center;
@@ -119,4 +124,54 @@ body {
 }
 #container .home .bg .center .snsIcon li:hover a {
   color: #000;
+}
+#container .about {
+  display: flex;
+  justify-content: center;
+}
+#container .about .about-left-context {
+  width: 550px;
+  height: 380px;
+  margin: 240px 70px 240px 400px;
+}
+#container .about .about-left-context h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #040c2c;
+}
+#container .about .about-left-context h3 {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #888;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+#container .about .about-left-context p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #555;
+  margin-bottom: 55px;
+}
+#container .about .about-left-context .aboutBtns {
+  display: flex;
+}
+#container .about .about-left-context .aboutBtns li {
+  margin-right: 20px;
+  background-color: #333;
+  height: 50px;
+  line-height: 50px;
+}
+#container .about .about-left-context .aboutBtns li a {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+#container .about .about-left-context .aboutBtns li:nth-child(1) {
+  width: 165px;
+}
+#container .about .about-left-context .aboutBtns li:nth-child(2) {
+  width: 220px;
 }

@@ -74,6 +74,11 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                     font-size: 20px;
                     letter-spacing: 1px;
                 }
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                    font-weight: 400;
+                }
                 .snsIcon{
                     display: flex;
                     justify-content: center;
@@ -98,6 +103,56 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                             color: #000;
                         }
                     }
+                }
+            }
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        .about-left-context{
+            width: 550px;
+            height: 380px;
+            margin: 240px 70px 240px 400px;
+            h2{
+                font-size: 25px;
+                margin-bottom: 20px;
+                color: #040c2c;
+            }
+            h3{
+                font-size: 18px;
+                margin-bottom: 40px;
+                color: #888;
+                letter-spacing: 3px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 15px;
+                line-height: 28px;
+                color: #555;
+                margin-bottom: 55px;
+            }
+            .aboutBtns{
+                display: flex;
+                li{
+                    margin-right: 20px;
+                    background-color: #333;
+                    height: 50px;
+                    line-height: 50px;
+                    a{
+                        font-size: 18px;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                }
+                li:nth-child(1){
+                    width: 165px;
+                }
+                li:nth-child(2){
+                    width: 220px;
                 }
             }
         }
