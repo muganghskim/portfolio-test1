@@ -16,9 +16,9 @@
 <body>
     <div id="header">
         <div class="center">
-            <h1 class="logo"><img src="img/logo2.png"></h1>
+            <h1 class="logo"></h1>
             <ul class="gnb">
-                <li><a href="#">HOME</a></li>
+                <li class="on"><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SERVICE</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio">
+        <div class="portfolio move">
             <div class="center">
                 <h2>My Portfolio</h2>
                 <p>I love what I do. I take great pride in what I do.</p>
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial move">
             <div class="center">
                 <div class="slideWrap swiper">
                     <!-- Additional required wrapper -->
@@ -186,7 +186,7 @@
                 <li><a href="#"><img src="img/6.png"></a></li>
             </ul>
         </div>
-        <div class="blog">
+        <div class="blog move">
             <div class="center">
                 <h2>Trusted byGreat People</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -232,7 +232,7 @@
             </div>
         </div>
         <div id="map"></div>
-        <div class="contact">
+        <div class="contact move">
             <div class="center">
                 <div class="left-info">
                     <h2>Contact Info</h2>
@@ -277,7 +277,7 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/isoTest.js"></script>
     <script src="js/countUp.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c06035a2f820bda07bd0f6923310edbb"></script>
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c06035a2f820bda07bd0f6923310edbb"></script>
     <script>
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -286,7 +286,8 @@
         };
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-    </script>
+    </script> -->
+    <script src="js/section.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();

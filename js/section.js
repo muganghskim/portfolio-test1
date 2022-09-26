@@ -11,9 +11,9 @@ window.addEventListener("scroll",function(){
         secStart[i] = move[i].offsetTop;
     }
     let scTop = window.scrollY;
-    
+   
     // offsetTop
-    if(scTop >= (cont2Start - 40)){
+    if(scTop >= (100)){
         header.classList.add("fixed");
     }
     else{
@@ -23,17 +23,14 @@ window.addEventListener("scroll",function(){
         if(scTop >= secStart[i]){
             for(let j=0; j<gnb.length; j++){
                 gnb[j].classList.remove("on");
-                hbgGnb[j].classList.remove("on");
             }
             gnb[i].classList.add("on");
-            hbgGnb[i].classList.add("on");
         }
     }
 });
 
 //gnb 클릭시 구역별로 나타내기
 scrollTocont(gnb);
-scrollTocont(hbgGnb);
 
 function scrollTocont(tag){
     for(let i=0; i<gnb.length; i++){
@@ -45,7 +42,6 @@ function scrollTocont(tag){
             top:scrollMove,
             behavior:"smooth"
         });
-        hbgMenu.classList.remove("on");
     });
     }
 }

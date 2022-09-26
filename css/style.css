@@ -20,6 +20,42 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+#header.fixed {
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 99;
+}
+#header.fixed .center .logo {
+  width: 65px;
+  height: 65px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+}
+#header.fixed .center .gnb li a {
+  color: #040c2c;
+}
+#header.fixed .center .loginBtn {
+  background-color: #040c2c;
+  width: 115px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+#header.fixed .center .loginBtn a {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+#header.fixed .center .loginBtn:hover {
+  background-color: #333;
+}
+#header.fixed .center .loginBtn:hover a {
+  color: #fff;
+}
+
 #header {
   display: flex;
   justify-content: center;
@@ -33,6 +69,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#header .center .logo {
+  width: 65px;
+  height: 65px;
+  background-image: url(../img/logo2.png);
+  background-repeat: no-repeat;
 }
 #header .center .gnb {
   display: flex;
