@@ -369,3 +369,86 @@ body {
   width: 48%;
   height: 640px;
 }
+#container .award {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+#container .award .center {
+  width: 51%;
+}
+#container .award .center .achieves {
+  display: flex;
+  justify-content: space-between;
+}
+#container .award .center .achieves .aw-box {
+  width: 175px;
+  text-align: center;
+}
+#container .award .center .achieves .aw-box .aw-icon {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #888;
+}
+#container .award .center .achieves .aw-box .aw-count {
+  font-size: 35px;
+  color: #040c2c;
+  margin-bottom: 20px;
+}
+#container .award .center .achieves .aw-box .achieve {
+  margin-bottom: 120px;
+  color: #888;
+}
+#container .testimonial {
+  height: 530px;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#container .testimonial .center {
+  width: 51%;
+}
+#container .testimonial .center .slideWrap {
+  width: 100%;
+  height: 400px;
+}
+#container .testimonial .center .slideWrap .swiper-slide {
+  text-align: center;
+  color: #fff;
+}
+#container .testimonial .center .slideWrap .swiper-slide img {
+  margin-top: 120px;
+  margin-bottom: 25px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+#container .testimonial .center .slideWrap .swiper-slide h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#container .testimonial .center .slideWrap .swiper-slide span {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 30px;
+}
+#container .testimonial .center .slideWrap .swiper-slide p {
+  font-size: 15px;
+  line-height: 30px;
+}
+#container .testimonial .center .circleBtn {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+#container .testimonial .center .circleBtn .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #888;
+}

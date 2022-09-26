@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <div id="header">
@@ -116,9 +117,68 @@
                 </div>
             </div>
         </div>
+        <div class="award">
+            <div class="center">
+                <div class="achieves">
+                    <div class="aw-box aw-box1">
+                        <div class="aw-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <p class="aw-count">0</p>
+                        <p class="achieve">Total Projects</p>
+                    </div>
+                    <div class="aw-box aw-box2">
+                        <div class="aw-icon"><i class="fa-solid fa-face-smile"></i></div>
+                        <p class="aw-count">0</p>
+                        <p class="achieve">Happy Clients</p>
+                    </div>
+                    <div class="aw-box aw-box3">
+                        <div class="aw-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                        <p class="aw-count">0</p>
+                        <p class="achieve">Years of Experience</p>
+                    </div>
+                    <div class="aw-box aw-box4">
+                        <div class="aw-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <p class="aw-count">0</p>
+                        <p class="achieve">Award Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="center">
+                <div class="slideWrap swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img src="img/circleimg1.jpg">
+                        <h5>Alex Smith</h5>
+                        <span>Envato Customer</span>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/circleimg2.jpg">
+                        <h5>Alex Smith</h5>
+                        <span>Envato Customer</span>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/circleimg3.jpg">
+                        <h5>Alex Smith</h5>
+                        <span>Envato Customer</span>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="circleBtn"></div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/isoTest.js"></script>
+    <script src="js/countUp.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
