@@ -173,12 +173,81 @@
                 </div>
             </div>
         </div>
+        <div class="trust">
+            <h2>Trusted byGreat People</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout.</p>
+            <ul class="logoLayout">
+                <li><a href="#"><img src="img/1.png"></a></li>
+                <li><a href="#"><img src="img/2.png"></a></li>
+                <li><a href="#"><img src="img/3.png"></a></li>
+                <li><a href="#"><img src="img/4.png"></a></li>
+                <li><a href="#"><img src="img/5.png"></a></li>
+                <li><a href="#"><img src="img/6.png"></a></li>
+            </ul>
+        </div>
+        <div class="blog">
+            <div class="center">
+                <h2>Trusted byGreat People</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout.</p>
+                <div class="blog-boxWrap">
+                    <div class="blogBox">
+                        <div class="blogImg">
+                            <img src="img/post-img1.jpg">
+                            <div class="po-day">Jan<br>14</div>
+                        </div>
+                        <div class="blogbot">
+                            <div class="iconTag"><i class="fa-solid fa-paperclip"></i><span>BY : Tasnim</span></div>
+                            <h4>Contrary to popular belief</h4>
+                            <p>Suspendisse in mattis neque, sed accu- msan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam..</p>
+                            <div class="blogBtn"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="blogBox">
+                        <div class="blogImg">
+                            <img src="img/post-img2.jpg">
+                            <div class="po-day">Jan<br>14</div>
+                        </div>
+                        <div class="blogbot">
+                            <div class="iconTag"><i class="fa-solid fa-paperclip"></i><span>BY : Tasnim</span></div>
+                            <h4>Behind the color</h4>
+                            <p>Suspendisse in mattis neque, sed accu- msan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam..</p>
+                            <div class="blogBtn"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="blogBox">
+                        <div class="blogImg">
+                            <img src="img/post-img3.jpg">
+                            <div class="po-day">Jan<br>14</div>
+                        </div>
+                        <div class="blogbot">
+                            <div class="iconTag"><i class="fa-solid fa-paperclip"></i><span>BY : Tasnim</span></div>
+                            <h4>Post with sidebar</h4>
+                            <p>Suspendisse in mattis neque, sed accu- msan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam..</p>
+                            <div class="blogBtn"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/isoTest.js"></script>
     <script src="js/countUp.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c06035a2f820bda07bd0f6923310edbb"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();

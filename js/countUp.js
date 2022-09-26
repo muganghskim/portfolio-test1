@@ -2,7 +2,7 @@
 //배열에 객체 이용 변수 선언
 let countValue = [
     {
-        plus:5,
+        plus:10,
         tag:".aw-box1 .aw-count",
         complete:1200,
         loop:10,
@@ -16,14 +16,14 @@ let countValue = [
         tagBox:".aw-box2"
     },
     {
-        plus:5,
+        plus:1,
         tag:".aw-box3 .aw-count",
         complete:5,
         loop:100,
         tagBox:".aw-box3"
     },
     {
-        plus:5,
+        plus:2,
         tag:".aw-box4 .aw-count",
         complete:20,
         loop:50,
