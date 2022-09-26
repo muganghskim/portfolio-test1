@@ -575,7 +575,117 @@ body {
   color: #555;
   font-size: 20px;
 }
-#container .map {
+#container #map {
   width: 100%;
   height: 500px;
+}
+#container .contact {
+  display: flex;
+  justify-content: center;
+}
+#container .contact .center {
+  width: 57%;
+  display: flex;
+  justify-content: center;
+}
+#container .contact .center .left-info {
+  margin-bottom: 300px;
+}
+#container .contact .center .left-info h2 {
+  font-size: 26px;
+  color: #040c2c;
+  margin-top: 125px;
+  margin-bottom: 45px;
+}
+#container .contact .center .left-info p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #888;
+  text-indent: -10px;
+}
+#container .contact .center .left-info p i {
+  margin-right: 8px;
+}
+#container .contact .center #right-form {
+  margin-left: 120px;
+}
+#container .contact .center #right-form h2 {
+  font-size: 26px;
+  color: #040c2c;
+  margin-top: 125px;
+  margin-bottom: 45px;
+  margin-left: 15px;
+}
+#container .contact .center #right-form input {
+  width: 300px;
+  height: 40px;
+  margin: 15px;
+  padding-left: 10px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+  color: #888;
+}
+#container .contact .center #right-form #message {
+  width: 632px;
+  height: 140px;
+  margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  resize: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+  color: #888;
+}
+#container .contact .center #right-form #contactBtn {
+  display: block;
+  width: 200px;
+  height: 52px;
+  margin-left: 15px;
+  background-color: #494949;
+  color: #fff;
+  border: none;
+}
+
+#footer {
+  background-color: #040c2c;
+  display: flex;
+  justify-content: center;
+}
+#footer .center {
+  width: 57%;
+  text-align: center;
+}
+#footer .center .flogo {
+  margin-top: 58px;
+  margin-bottom: 30px;
+}
+#footer .center .fIcon {
+  display: flex;
+  justify-content: center;
+}
+#footer .center .fIcon li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 0 15px 20px;
+  line-height: 35px;
+}
+#footer .center .fIcon li a {
+  color: #fff;
+}
+#footer .center p {
+  margin-bottom: 15px;
+  color: #fff;
+}
+#footer .center p span {
+  color: #555;
+}
+#footer .center .fcopy {
+  margin-bottom: 60px;
+  letter-spacing: 2px;
 }

@@ -561,8 +561,117 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
             }
         }
     }
-    .map{
+    #map{
         width: 100%;
         height: 500px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        .center{
+            width: 57%;
+            display: flex;
+            justify-content: center;
+            .left-info{
+                margin-bottom: 300px;
+                h2{
+                    font-size: 26px;
+                    color: #040c2c;
+                    margin-top: 125px;
+                    margin-bottom: 45px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: #888;
+                    text-indent: -10px;
+                    i{
+                        margin-right: 8px;
+                    }
+                }
+            }
+            #right-form{
+                margin-left: 120px;
+                h2{
+                    font-size: 26px;
+                    color: #040c2c;
+                    margin-top: 125px;
+                    margin-bottom: 45px;
+                    margin-left: 15px;
+                }
+                input{
+                    width: 300px;
+                    height: 40px;
+                    margin: 15px;
+                    padding-left: 10px;
+                    outline: none;
+                    box-sizing: border-box;
+                    border: 1px solid #ededed;
+                    color: #888;
+                }
+                #message{
+                    width: 632px;
+                    height: 140px;
+                    margin-left: 15px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    resize: none;
+                    outline: none;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid #ededed;
+                    color: #888;
+                }
+                #contactBtn{
+                    display: block;
+                    width: 200px;
+                    height: 52px;
+                    margin-left: 15px;
+                    background-color: #494949;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+#footer{
+    background-color: #040c2c;
+    display: flex;
+    justify-content: center;
+    .center{
+        width: 57%;
+        text-align: center;
+        .flogo{
+            margin-top: 58px;
+            margin-bottom: 30px;
+        }
+        .fIcon{
+            display: flex;
+            justify-content: center;
+            li{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                margin: 0 15px 20px;
+                line-height: 35px;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        p{
+            margin-bottom: 15px;
+            color: #fff;
+            span{
+                color: #555;
+            }
+        }
+        .fcopy{
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+        }
     }
 }
