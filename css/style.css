@@ -726,6 +726,11 @@ body {
   background-color: #494949;
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+#container .contact .center #right-form #contactBtn:hover {
+  transition: all 0.5s;
+  background-color: #040c2c;
 }
 
 #footer {
