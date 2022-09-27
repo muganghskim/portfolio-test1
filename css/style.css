@@ -718,6 +718,15 @@ body {
   border: 1px solid #ededed;
   color: #888;
 }
+#container .contact .center #right-form #message::-moz-placeholder {
+  font-family: "Arial";
+}
+#container .contact .center #right-form #message:-ms-input-placeholder {
+  font-family: "Arial";
+}
+#container .contact .center #right-form #message::placeholder {
+  font-family: "Arial";
+}
 #container .contact .center #right-form #contactBtn {
   display: block;
   width: 200px;

@@ -716,6 +716,9 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                     box-sizing: border-box;
                     border: 1px solid #ededed;
                     color: #888;
+                    &::placeholder{
+                        font-family:"Arial";
+                    }
                 }
                 #contactBtn{
                     display: block;
