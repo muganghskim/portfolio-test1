@@ -70,7 +70,7 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
     .center{
         width: 74%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         .logo{
             width: 65px;
@@ -185,7 +185,11 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
     }
     .about{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        .about-img{
+            overflow-x: hidden;
+        }
         .about-left-context{
             width: 550px;
             height: 380px;
@@ -685,6 +689,7 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                 }
             }
             #right-form{
+                width: 650px;
                 margin-left: 120px;
                 h2{
                     font-size: 26px;
@@ -694,9 +699,9 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                     margin-left: 15px;
                 }
                 input{
-                    width: 300px;
+                    width: 45%;
                     height: 40px;
-                    margin: 15px;
+                    margin: 1%;
                     padding-left: 10px;
                     outline: none;
                     box-sizing: border-box;
@@ -704,11 +709,9 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                     color: #888;
                 }
                 #message{
-                    width: 632px;
+                    width: 95%;
                     height: 140px;
-                    margin-left: 15px;
-                    margin-top: 30px;
-                    margin-bottom: 30px;
+                    margin: 1%;
                     resize: none;
                     outline: none;
                     padding-left: 10px;
@@ -724,7 +727,7 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                     display: block;
                     width: 200px;
                     height: 52px;
-                    margin-left: 15px;
+                    margin: 1%;
                     background-color: #494949;
                     color: #fff;
                     border: none;
@@ -783,6 +786,95 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
         .fcopy{
             margin-bottom: 60px;
             letter-spacing: 2px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    #header{
+        .center{
+            width: 78%;
+            .gnb{
+                li{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    #header.fixed{
+        .center{
+            width: 78%;
+            .gnb{
+                li{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    #container{
+        .about{
+            width: 100%;
+            .about-left-context{
+                width: 50%;
+                margin-left: 120px;
+                z-index: 10;
+            }
+        }
+        .service{
+            .center{
+                width: 78%;
+            }
+        }
+        .portfolio{
+            .center{
+                width: 78%;
+            }
+        }
+        .award{
+            .center{
+                width: 78%;
+            }
+        }
+        .testimonial{
+            .center{
+                width: 63%;
+            }
+        }
+        .trust{
+            width: 78%;
+        }
+        .blog{
+            .center{
+                width: 78%;
+                .blog-boxWrap{
+                    .blogBox{
+                        width: 31%;
+                    }
+                }
+            }
+        }
+        .contact{
+            .center{
+                width: 78%;
+                .left-info{
+                    width: 40%;
+                }
+                #right-form{
+                    width: 60%;
+                    margin-left: 50px;
+                    input{
+                        width: 46%;
+                        margin: 1%;
+                    }
+                    #message{
+                        width: 95%;
+                        margin: 1%;
+                    }
+                    #contactBtn{
+                        margin: 1%;
+                    }
+                }
+            }
         }
     }
 }

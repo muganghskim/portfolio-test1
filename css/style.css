@@ -78,7 +78,7 @@ body {
 #header .center {
   width: 74%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #header .center .logo {
@@ -190,7 +190,11 @@ body {
 }
 #container .about {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+#container .about .about-img {
+  overflow-x: hidden;
 }
 #container .about .about-left-context {
   width: 550px;
@@ -685,6 +689,7 @@ body {
   margin-right: 8px;
 }
 #container .contact .center #right-form {
+  width: 650px;
   margin-left: 120px;
 }
 #container .contact .center #right-form h2 {
@@ -695,9 +700,9 @@ body {
   margin-left: 15px;
 }
 #container .contact .center #right-form input {
-  width: 300px;
+  width: 45%;
   height: 40px;
-  margin: 15px;
+  margin: 1%;
   padding-left: 10px;
   outline: none;
   box-sizing: border-box;
@@ -705,11 +710,9 @@ body {
   color: #888;
 }
 #container .contact .center #right-form #message {
-  width: 632px;
+  width: 95%;
   height: 140px;
-  margin-left: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 1%;
   resize: none;
   outline: none;
   padding-left: 10px;
@@ -731,7 +734,7 @@ body {
   display: block;
   width: 200px;
   height: 52px;
-  margin-left: 15px;
+  margin: 1%;
   background-color: #494949;
   color: #fff;
   border: none;
@@ -789,4 +792,69 @@ body {
 #footer .center .fcopy {
   margin-bottom: 60px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+  #header .center {
+    width: 78%;
+  }
+  #header .center .gnb li {
+    margin: 0 5px;
+  }
+  #header.fixed .center {
+    width: 78%;
+  }
+  #header.fixed .center .gnb li {
+    margin: 0 5px;
+  }
+  #container .about {
+    width: 100%;
+  }
+  #container .about .about-left-context {
+    width: 50%;
+    margin-left: 120px;
+    z-index: 10;
+  }
+  #container .service .center {
+    width: 78%;
+  }
+  #container .portfolio .center {
+    width: 78%;
+  }
+  #container .award .center {
+    width: 78%;
+  }
+  #container .testimonial .center {
+    width: 63%;
+  }
+  #container .trust {
+    width: 78%;
+  }
+  #container .blog .center {
+    width: 78%;
+  }
+  #container .blog .center .blog-boxWrap .blogBox {
+    width: 31%;
+  }
+  #container .contact .center {
+    width: 78%;
+  }
+  #container .contact .center .left-info {
+    width: 40%;
+  }
+  #container .contact .center #right-form {
+    width: 60%;
+    margin-left: 50px;
+  }
+  #container .contact .center #right-form input {
+    width: 46%;
+    margin: 1%;
+  }
+  #container .contact .center #right-form #message {
+    width: 95%;
+    margin: 1%;
+  }
+  #container .contact .center #right-form #contactBtn {
+    margin: 1%;
+  }
 }
