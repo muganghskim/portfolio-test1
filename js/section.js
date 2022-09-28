@@ -2,6 +2,9 @@
 const header = document.querySelector("#header");
 const move = document.querySelectorAll(".move");
 const gnb = document.querySelectorAll(".gnb > li");
+const hamgnb = document.querySelectorAll(".hamGnb > li");
+const hamBtn = document.querySelector(".hamBtn");
+const hamMenu = document.querySelector(".hamMenu");
 
 let secStart = [];
 
@@ -23,14 +26,17 @@ window.addEventListener("scroll",function(){
         if(scTop >= secStart[i]){
             for(let j=0; j<gnb.length; j++){
                 gnb[j].classList.remove("on");
+                hamgnb[j].classList.remove("on");
             }
             gnb[i].classList.add("on");
+            hamgnb[i].classList.add("on");
         }
     }
 });
 
 //gnb 클릭시 구역별로 나타내기
 scrollTocont(gnb);
+scrollTocont(hamgnb);
 
 function scrollTocont(tag){
     for(let i=0; i<gnb.length; i++){
@@ -45,3 +51,9 @@ function scrollTocont(tag){
     });
     }
 }
+
+hamBtn.addEventListener("click",function(){
+    hamMenu.classList.toggle("start");
+    hamBtn.classList.toggle("close");
+    header.classList.toggle("start");
+});
