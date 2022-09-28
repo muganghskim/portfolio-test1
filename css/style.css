@@ -671,7 +671,10 @@ body {
   background-color: #040c2c;
   color: #fff;
 }
-#container #map {
+#container #mapWrap {
+  width: 100%;
+}
+#container #mapWrap #map {
   width: 100%;
   height: 500px;
 }

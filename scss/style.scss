@@ -673,9 +673,12 @@ overflow-x: hidden;}
             }
         }
     }
-    #map{
+    #mapWrap{
         width: 100%;
-        height: 500px;
+        #map{
+            width: 100%;
+            height: 500px;
+        }
     }
     .contact{
         display: flex;
