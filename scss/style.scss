@@ -2,7 +2,8 @@
 a{text-decoration: none;}
 li,ol,ul{list-style: none;}
 img{vertical-align: middle;}
-body{line-height: 1; font-family: 'Montserrat', sans-serif;}
+body{line-height: 1; font-family: 'Montserrat', sans-serif;
+overflow-x: hidden;}
 
 #header.fixed{
     width: 100%;
@@ -78,6 +79,8 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
             height: 65px;
             background-image: url(../img/logo2.png);
             background-repeat: no-repeat;
+            z-index: 6;
+            cursor: pointer;
         }
         .gnb{
             display: flex;
@@ -111,6 +114,7 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
             text-align: center;
             transition: all 0.5s;
             border-radius: 10px;
+            z-index: 6;
             a{
                 display: block;
                 width: 100%;
@@ -1081,6 +1085,16 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                 }
             }
         }
+        .trust{
+            .logoLayout{
+                li:nth-child(1){
+                    display: none;
+                }
+                li:nth-child(2){
+                    display: none;
+                }
+            }
+        }
     }
     #footer{
         .center{
@@ -1133,6 +1147,7 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
             }
             .about-img{
                 position: unset;
+                
             }
         }
         .service{
@@ -1161,6 +1176,13 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
                 width: 95%;
             }
         }
+        .trust{
+            .logoLayout{
+                li:nth-child(3){
+                    display: none;
+                }
+            }
+        }
         .contact{
             .center{
                 flex-direction: column;
@@ -1186,5 +1208,28 @@ body{line-height: 1; font-family: 'Montserrat', sans-serif;}
         .center{
             width: 56%;
         }    
+    }
+}
+
+@media screen and (max-width:580px){
+    #container{
+        .award{
+            .center{
+                width: 80%;
+                .achieves{
+                    flex-wrap: wrap;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    .aw-box{
+                        .aw-icon{
+                            margin-top: 20px;
+                        }
+                        .achieve{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

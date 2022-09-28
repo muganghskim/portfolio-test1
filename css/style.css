@@ -18,6 +18,7 @@ img {
 body {
   line-height: 1;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 #header.fixed {
@@ -87,6 +88,8 @@ body {
   height: 65px;
   background-image: url(../img/logo2.png);
   background-repeat: no-repeat;
+  z-index: 6;
+  cursor: pointer;
 }
 #header .center .gnb {
   display: flex;
@@ -116,6 +119,7 @@ body {
   text-align: center;
   transition: all 0.5s;
   border-radius: 10px;
+  z-index: 6;
 }
 #header .center .loginBtn a {
   display: block;
@@ -1030,6 +1034,12 @@ body {
   #container .contact .center #right-form #contactBtn {
     margin: 1%;
   }
+  #container .trust .logoLayout li:nth-child(1) {
+    display: none;
+  }
+  #container .trust .logoLayout li:nth-child(2) {
+    display: none;
+  }
   #footer .center {
     width: 46%;
   }
@@ -1091,6 +1101,9 @@ body {
   #container .blog .center {
     width: 95%;
   }
+  #container .trust .logoLayout li:nth-child(3) {
+    display: none;
+  }
   #container .contact .center {
     flex-direction: column;
     width: 95%;
@@ -1111,5 +1124,21 @@ body {
   }
   #footer .center {
     width: 56%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #container .award .center {
+    width: 80%;
+  }
+  #container .award .center .achieves {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #container .award .center .achieves .aw-box .aw-icon {
+    margin-top: 20px;
+  }
+  #container .award .center .achieves .aw-box .achieve {
+    margin-bottom: 20px;
   }
 }
