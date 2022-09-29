@@ -1018,6 +1018,7 @@ body {
   }
   #container .blog .center .blog-boxWrap .blogBox {
     width: 100%;
+    margin: unset;
     margin-bottom: 40px;
   }
   #container .contact .center {
