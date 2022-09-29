@@ -44,6 +44,7 @@ function scrollTocont(tag){
         e.preventDefault();
         hamMenu.classList.remove("start");
         hamBtn.classList.remove("close");
+        header.classList.remove("start");
         //해당 섹션구역의 위치값으로 스크롤바가 부드럽게 이동
         let scrollMove = move[i].offsetTop;
         window.scrollTo({
