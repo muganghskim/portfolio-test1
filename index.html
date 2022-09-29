@@ -239,7 +239,9 @@
         var marker = new kakao.maps.Marker({
             position: markerPosition
         });
-        window.onresize = function(){showAsCeterByMarker();}
+        window.addEventListener("resize",function(){
+            showAsCeterByMarker();
+        });
 
         function showAsCeterByMarker(){ //마커 기준 중앙으로
             map.setCenter(marker.getPosition());

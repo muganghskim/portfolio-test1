@@ -215,6 +215,7 @@ body {
   width: 550px;
   height: 380px;
   margin: 240px 70px 240px 400px;
+  z-index: 10;
 }
 #container .about .about-left-context h2 {
   font-size: 25px;
