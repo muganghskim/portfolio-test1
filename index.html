@@ -239,7 +239,11 @@
         var marker = new kakao.maps.Marker({
             position: markerPosition
         });
-        
+        window.onresize = function(){showAsCeterByMarker();}
+
+        function showAsCeterByMarker(){ //마커 기준 중앙으로
+            map.setCenter(marker.getPosition());
+        }
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
     </script>
