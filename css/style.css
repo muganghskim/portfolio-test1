@@ -35,12 +35,12 @@ body {
 }
 #header.fixed .center .gnb li a {
   color: #040c2c;
+  transition: all 0.5s;
 }
 #header.fixed .center .gnb > li:hover a {
   border-bottom: 2px solid #040c2c;
   box-sizing: border-box;
   padding: 10px 0;
-  transition: all 0.5s;
 }
 #header.fixed .center .gnb > li.on a {
   border-bottom: 2px solid #040c2c;
@@ -100,6 +100,7 @@ body {
 }
 #header .center .gnb li a {
   color: #fff;
+  transition: all 0.5s;
 }
 #header .center .gnb li.on a {
   border-bottom: 2px solid #fff;
